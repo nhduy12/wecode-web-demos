@@ -1,0 +1,6 @@
+<div class="list-container">
+  <app-student-list [list]="students" (onStudentSelected)="catchSelectedStudent($event)"></app-student-list>
+</div>
+<div class="student-detail" *ngIf="selectedStudent">
+  <app-student-detail [student]="selectedStudent"></app-student-detail>
+</div>

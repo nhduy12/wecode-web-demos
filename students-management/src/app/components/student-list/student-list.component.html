@@ -1,0 +1,16 @@
+<table>
+    <thead>
+        <tr>
+            <th>MSSV</th>
+            <th>Họ & Tên</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let student of list">
+            <td  (click)="selectStudent(student)">{{student.studentNumber}}</td>
+            <td>{{student.firstName}} {{student.lastName}}</td>
+            <td>{{student.email}}</td>
+        </tr>
+    </tbody>
+</table>
