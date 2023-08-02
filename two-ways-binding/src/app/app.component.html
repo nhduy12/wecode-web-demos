@@ -1,0 +1,17 @@
+
+<div class="row">
+  <div class="col-lg-4"></div>
+  <div class="col-lg-4">
+    <h2>Student form</h2>
+    <app-student-form (onSaveData)="saveData($event)"></app-student-form>
+  </div>
+</div>
+<hr>
+
+<div class="row">
+  <div class="col-lg-4"></div>
+  <div class="col-lg-4">
+    <h2>List student</h2>
+    <app-student-list [list]="studentList"></app-student-list>
+  </div>
+</div>

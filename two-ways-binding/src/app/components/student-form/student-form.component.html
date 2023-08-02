@@ -1,0 +1,18 @@
+<label>MSSV</label>
+<input type="text" class="form-control mb-2" [(ngModel)]="student.studentNumber">
+
+<div class="row">
+    <div class="col-6">
+        <label>Họ</label>
+        <input type="text" class="form-control mb-2" [(ngModel)]="student.firstName">
+    </div>
+    <div class="col-6">
+        <label>Tên</label>
+        <input type="text" class="form-control mb-2" [(ngModel)]="student.lastName">
+    </div>
+</div>
+
+<label>Email</label>
+<input type="text" class="form-control mb-2" [(ngModel)]="student.email">
+
+<button class="btn btn-primary" (click)="saveData()" style="width: 200px;">Save</button>
